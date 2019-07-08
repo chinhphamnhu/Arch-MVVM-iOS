@@ -7,16 +7,52 @@
 //
 
 import UIKit
+import SVProgressHUD
+
+typealias HUD = SVProgressHUD
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    // MARK: - Enum
+
+    enum RootType {
+        case tabBar(item: TabbarController.TabType)
+        // TODO: - Define some screen here: introduct or tutorial
+    }
+
+    // MARK: - Properties
 
     var window: UIWindow?
+
+    static let shared: AppDelegate = {
+        guard let shared = UIApplication.shared.delegate as? AppDelegate else {
+            fatalError("Cannot cast `UIApplication.shared.delegate` to `AppDelegate`.")
+        }
+        return shared
+    }()
+
+    // MARK: - UIApplicationDelegate
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
+        window?.rootViewController = SplashViewController()
         return true
+    }
+}
+
+// MARK: - Public Functions
+
+extension AppDelegate {
+
+    func changeRoot(_ rootType: RootType) {
+        let target: UIViewController
+        switch rootType {
+        case .tabBar(let item):
+            target = TabbarController(selectedTab: item)
+        }
+        window?.rootViewController = target
     }
 }

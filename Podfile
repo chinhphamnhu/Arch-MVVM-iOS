@@ -52,7 +52,7 @@ post_install do |installer|
     end
     if ['R.swift.Library'].include? target.name
       target.build_configurations.each do |config|
-        config.build_settings['SWIFT_VERSION'] = 4.0
+        config.build_settings['SWIFT_VERSION'] = 4.2
       end
     end
     target.build_configurations.each do |config|
