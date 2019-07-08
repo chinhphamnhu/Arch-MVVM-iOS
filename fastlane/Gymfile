@@ -1,0 +1,3 @@
+scheme "MyApp"
+include_bitcode false
+clean true

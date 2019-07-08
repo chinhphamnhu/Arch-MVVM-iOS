@@ -1,0 +1,2 @@
+scheme = "MyApp"
+ipa_stg_file_name = scheme << "-STG.ipa"
