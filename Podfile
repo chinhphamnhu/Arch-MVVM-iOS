@@ -19,6 +19,7 @@ def app_pods
   pod 'RxSwift'
   pod 'RxSwiftExt'
   pod 'RxDataSources'
+  pod 'RxAlamofire'
   pod 'R.swift'
   pod 'ObjectMapper'
   pod 'SwifterSwift'
