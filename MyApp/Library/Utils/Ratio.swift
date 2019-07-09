@@ -9,7 +9,6 @@
 import SwifterSwift
 
 let ratio = Ratio.horizontal
-let screenSize = UIScreen.main.bounds.size
 
 enum DeviceType {
     case iPhone4
