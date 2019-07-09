@@ -14,7 +14,7 @@
 		693AD1E622D4321C00DA553B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1E522D4321C00DA553B /* NetworkService.swift */; };
 		693AD1E822D4328600DA553B /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1E722D4328600DA553B /* Cacheable.swift */; };
 		693AD1EE22D4334100DA553B /* APIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1ED22D4334100DA553B /* APIAction.swift */; };
-		693AD1F022D4340100DA553B /* AdvencedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1EF22D4340100DA553B /* AdvencedAction.swift */; };
+		693AD1F022D4340100DA553B /* AdvancedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1EF22D4340100DA553B /* AdvancedAction.swift */; };
 		693AD1F222D4358A00DA553B /* SingleItemResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1F122D4358A00DA553B /* SingleItemResource.swift */; };
 		693AD1F422D4367F00DA553B /* ArrayResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1F322D4367F00DA553B /* ArrayResource.swift */; };
 		693AD1F622D4378200DA553B /* BasicNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AD1F522D4378200DA553B /* BasicNetworkService.swift */; };
@@ -74,7 +74,7 @@
 		693AD1E522D4321C00DA553B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		693AD1E722D4328600DA553B /* Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
 		693AD1ED22D4334100DA553B /* APIAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAction.swift; sourceTree = "<group>"; };
-		693AD1EF22D4340100DA553B /* AdvencedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvencedAction.swift; sourceTree = "<group>"; };
+		693AD1EF22D4340100DA553B /* AdvancedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedAction.swift; sourceTree = "<group>"; };
 		693AD1F122D4358A00DA553B /* SingleItemResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemResource.swift; sourceTree = "<group>"; };
 		693AD1F322D4367F00DA553B /* ArrayResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayResource.swift; sourceTree = "<group>"; };
 		693AD1F522D4378200DA553B /* BasicNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNetworkService.swift; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				693AD1ED22D4334100DA553B /* APIAction.swift */,
-				693AD1EF22D4340100DA553B /* AdvencedAction.swift */,
+				693AD1EF22D4340100DA553B /* AdvancedAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -728,7 +728,7 @@
 				693AD21022D44DC300DA553B /* Photo.swift in Sources */,
 				693AD1F422D4367F00DA553B /* ArrayResource.swift in Sources */,
 				E7FA533022D38EEF007A6BA4 /* TabBarItem.swift in Sources */,
-				693AD1F022D4340100DA553B /* AdvencedAction.swift in Sources */,
+				693AD1F022D4340100DA553B /* AdvancedAction.swift in Sources */,
 				693AD22622D4536200DA553B /* SettingViewController.swift in Sources */,
 				693AD1DE22D425A000DA553B /* BundleExt.swift in Sources */,
 				693AD22122D4536200DA553B /* HomeViewController.swift in Sources */,
