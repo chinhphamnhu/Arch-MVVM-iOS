@@ -25,6 +25,14 @@ final class SplashViewController: UIViewController {
     // MARK: - Private Functions
 
     private func setupUI() {
+
+        // Set language
+        Bundle.set(language: .japanese)
+
+        // Set text
+        helloWorldLabel.text = R.string.localizable.helloWorld()
+
+        // Animation
         UIView.animate(withDuration: 1.5, animations: {
             self.circleView.alpha = 1
         }, completion: { _ in

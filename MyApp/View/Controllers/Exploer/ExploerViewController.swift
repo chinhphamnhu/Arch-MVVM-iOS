@@ -19,5 +19,6 @@ final class ExploerViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = R.string.localizable.welcome()
+        navigationItem.title = R.string.localizable.exploer()
     }
 }

@@ -12,5 +12,6 @@ final class SettingViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = R.string.localizable.setting()
     }
 }

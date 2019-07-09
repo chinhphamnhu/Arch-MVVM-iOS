@@ -8,8 +8,12 @@
 
 import UIKit
 import SVProgressHUD
+import XCGLogger
 
 typealias HUD = SVProgressHUD
+let log = XCGLogger.default
+let screenSize = UIScreen.main.bounds.size
+let userDefaults = UserDefaults.standard
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,6 +43,14 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         window?.rootViewController = SplashViewController()
+
+        log.setup(
+            level: .debug,
+            showThreadName: true,
+            showLevel: true,
+            showFileNames: true,
+            showLineNumbers: true,
+            fileLevel: .debug)
         return true
     }
 }

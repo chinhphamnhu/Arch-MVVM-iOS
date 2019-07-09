@@ -63,9 +63,9 @@ extension TabbarController {
 
         var title: String {
             switch self {
-            case .home: return "Home"
-            case .exploer: return "Exploer"
-            case .setting: return "Setting"
+            case .home: return R.string.localizable.home()
+            case .exploer: return R.string.localizable.exploer()
+            case .setting: return R.string.localizable.setting()
             }
         }
 
@@ -78,8 +78,9 @@ extension TabbarController {
         }
 
         var controller: ViewController {
+            let networkService: NetworkService = CachedNetworkService(BasicNetworkService())
             switch self {
-            case .home: return HomeViewController()
+            case .home: return HomeViewController(HomeViewModel(networkService, albumID: 2))
             case .exploer: return ExploerViewController()
             case .setting: return SettingViewController()
             }
