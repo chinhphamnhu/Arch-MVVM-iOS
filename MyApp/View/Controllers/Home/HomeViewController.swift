@@ -57,10 +57,8 @@ extension HomeViewController {
     }
 
     private func bindToViewModel() {
-        HUD.show()
         viewModel.viewModelsDriver
             .drive(tableView.rx.items) { tableView, _, item in // _ -> row
-                HUD.dismiss()
                 let cell = tableView.dequeueReusableCell(withClass: PhotoTableCell.self)
                 cell.fillWith(item)
                 return cell
